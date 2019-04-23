@@ -1,0 +1,62 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00829C;
+}
+
+body > div {
+    display: inline-block;
+    width: 800px;
+    margin-top: 80px;
+    margin-left: calc( (100% - 800px) / 2 );
+}
+    body > div > .left {
+        display: inline-block;
+        float: left;
+        width: 40%;
+        background-color: #423D80;
+    }
+    body > div > .right {
+        display: inline-block;
+        float: left;
+        width: 60%;
+        padding: 80px;
+        background-color: #FFF;
+    }
+        body > div > .right > .x {
+            display: inline-block;
+        }
+        body > div > .right > form {
+            display: inline-block;
+            width: 100%;
+            background: red;
+        }
+            form > div {
+                display: inline-block;
+            }
+
+.btn {
+    display: inline-block;
+    padding: 5px 30px;
+    color: #FFF;
+    background-color: blue;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 15px;
+}
+
+.citrina {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 50%;
+    background: yellow;
+    margin: 20px 400px;
+    transform: rotate(-45deg);
+}
