@@ -8,6 +8,7 @@ body * {
 
 body {
     background-color: #00829C;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body > div {
@@ -15,31 +16,82 @@ body > div {
     width: 800px;
     margin-top: 80px;
     margin-left: calc( (100% - 800px) / 2 );
+    position: relative;
 }
     body > div > .left {
         display: inline-block;
         float: left;
         width: 40%;
         background-color: #423D80;
+        position: absolute;
+        top: 30px;
+        bottom: 30px;
+        color: #FFF;
+        background-image: url(../img/hill.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
+        body > div > .left > h1 {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            right: 30px;        
+        }
+        body > div > .left > footer {
+            position: absolute;
+            bottom: 20px;
+            left: 30px;
+            right: 30px;        
+        }
+            footer > a {
+                color: #FFF;
+            }
+            footer > span {
+            }
     body > div > .right {
         display: inline-block;
-        float: left;
+        float: right;
         width: 60%;
         padding: 80px;
         background-color: #FFF;
     }
         body > div > .right > .x {
             display: inline-block;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            color: #999;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
         body > div > .right > form {
             display: inline-block;
             width: 100%;
-            background: red;
         }
-            form > div {
+            form > .form-row {
                 display: inline-block;
+                width: 100%;
+                margin-bottom: 30px;
             }
+                form > .form-row > label {
+                    display: inline-block;
+                    width: 100%;
+                    color: #999;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                form > .form-row > input {
+                    display: inline-block;
+                    width: 100%;
+                    line-height: 36px;
+                    font-size: 18px;
+                    border: none;
+                    border-bottom: 2px solid #CCC;
+                    outline-color: transparent;
+                }
 
 .btn {
     display: inline-block;
