@@ -84,6 +84,7 @@ body > div {
             position: absolute;
             top: 0;
             right: 0;
+            cursor: pointer;
         }
         body > div > .right > form {
             display: inline-block;
